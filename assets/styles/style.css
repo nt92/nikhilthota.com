@@ -7,7 +7,7 @@ body {
 body:after {
     z-index: -1;
     visibility: hidden;
-    content: url(../images/memoji.png) url(../icons/github.png) url(../icons/medium.png) url(../icons/twitter.png) url(../icons/linkedin.png) url(../icons/resume.png) url(../icons/email.png);
+    content: url(../images/memoji.png) url(../icons/github.png) url(../icons/medium.png);
 }
 
 h1 {
@@ -82,23 +82,10 @@ a:hover, a:active {
   margin-bottom: 0px;
 }
 
-.resume {
-  width: 36px;
-  height: 36px;
-  background-size: 95%;
-  background-image: url(../icons/resume_grey.png);
-  background-repeat: no-repeat;
-  transition: all 300ms ease;
-}
-
-.resume:hover, .resume:focus {
-  background-image: url(../icons/resume.png);
-}
-
 .medium {
   width: 36px;
   height: 36px;
-  background-size: 95%;
+  background-size: 85%;
   background-image: url(../icons/medium_grey.png);
   background-repeat: no-repeat;
   -webkit-transition: all 300ms ease;
@@ -109,23 +96,10 @@ a:hover, a:active {
   background-image: url(../icons/medium.png);
 }
 
-.email {
-  width: 36px;
-  height: 36px;
-  background-size: 95%;
-  background-image: url(../icons/email_grey.png);
-  background-repeat: no-repeat;
-  transition: all 300ms ease;
-}
-
-.email:hover, .email:focus {
-  background-image: url(../icons/email.png);
-}
-
 .twitter {
   width: 36px;
   height: 36px;
-  background-size: 100%;
+  background-size: 90%;
   background-image: url(../icons/twitter_grey.png);
   background-repeat: no-repeat;
   transition: all 300ms ease;
@@ -138,7 +112,7 @@ a:hover, a:active {
 .github {
   width: 36px;
   height: 36px;
-  background-size: 100%;
+  background-size: 90%;
   background-image: url(../icons/github_grey.png);
   background-repeat: no-repeat;
   transition: all 300ms ease;
@@ -146,19 +120,6 @@ a:hover, a:active {
 
 .github:hover, .github:focus {
   background-image: url(../icons/github.png);
-}
-
-.linkedin {
-  width: 36px;
-  height: 36px;
-  background-size: 95%;
-  background-image: url(../icons/linkedin_grey.png);
-  background-repeat: no-repeat;
-  transition: all 300ms ease;
-}
-
-.linkedin:hover, .linkedin:focus {
-  background-image: url(../icons/linkedin.png);
 }
 
 .linkButton {
@@ -178,7 +139,7 @@ a:hover, a:active {
 @media (min-width: 48em) {
 
   h1 {
-    font-size: 54px;
+    font-size: 50px;
   }
 
   c1, c2 {
