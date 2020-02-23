@@ -6,7 +6,7 @@ body {
 
 body:after {
     z-index: -1;
-    visibility: hidden;
+    display: none;
     content: url(../images/memoji.png) url(../icons/github.png) url(../icons/medium.png);
 }
 
@@ -67,8 +67,7 @@ a:hover, a:active {
   text-align: center;
   align-items: center;
   position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 22%;
   font-family: monserrat, sans-serif;
 }
 
