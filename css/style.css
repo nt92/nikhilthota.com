@@ -19,15 +19,12 @@ h2 {
 
 c2 {
   color: #333;
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   font-weight: lighter;
   line-height: 1.4em;
-  margin-top: 16px;
-  margin-left: 28px;
-  margin-right: 28px;
-  -webkit-margin-start: 28px;
   -webkit-margin-after: 28px;
+  -webkit-margin-before: 16px;
   max-width: 500px;
   line-height: 150%;
 }
@@ -76,12 +73,8 @@ a:hover, a:active {
   justify-content: space-evenly;
 }
 
-.post_author {
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
 .post_date {
+  margin-top: 4px;
   font-style: italic;
 }
 
@@ -110,6 +103,7 @@ a:hover, a:active {
 
 .small_nikhil {
   width: 120px;
+  margin-right: 40px;
 }
 
 .author_container {
@@ -117,6 +111,7 @@ a:hover, a:active {
   flex-direction: row;
   text-align: center;
   align-items: center;
+  /* margin: 30px auto 30px auto; */
   justify-content: center;
 }
 
@@ -127,6 +122,7 @@ a:hover, a:active {
   align-items: center;
   position: relative;
   transform: translateY(10%);
+  padding: 0 12px 0 12px;
 }
 
 .post-container {
@@ -135,20 +131,17 @@ a:hover, a:active {
   text-align: center;
   align-items: center;
   position: relative;
-  transform: translateY(2%);
+  margin: 30px auto 30px auto;
+  padding: 0 12px 0 12px;
+  
 }
 
 .post-content {
   font-style: normal;
-  font-weight: lighter;
   line-height: 1.4em;
   margin-top: 16px;
-  margin-left: 28px;
-  margin-right: 28px;
-  -webkit-margin-start: 28px;
-  -webkit-margin-after: 28px;
-  max-width: 500px;
   line-height: 150%;
+  max-width: 600px;
   text-align: left;
 }
 
@@ -238,6 +231,6 @@ a:hover, a:active {
   }
 
   c1, c2 {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
