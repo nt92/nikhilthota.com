@@ -1,8 +1,9 @@
+/* Core Components */
+
 body {
   background-color: #fafffa;
   margin: 0;
   font-family: monserrat, sans-serif;
-  /* overflow: hidden; */
 }
 
 h1 {
@@ -51,7 +52,84 @@ a:hover, a:active {
   transition: border-color 170ms ease-in-out;
 }
 
-.postlist {
+/* Post Element Re-styling */
+
+hr {
+  margin-top: 30px;
+  padding-bottom: 20px;
+  border: none;
+  text-align: center;
+  font-size: 20px;
+  font-family: medium-content-slab-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+hr::before {
+  content: "...";
+  text-indent: 0.6em;
+  letter-spacing: 1em;
+  line-height: 2;
+  font-style: italic;
+}
+
+blockquote {
+  margin: 0;
+  padding-left: 1.4rem;
+  position: relative;
+}
+
+blockquote::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: #c5c4c4;
+  border-radius: 2px / 4px;
+}
+
+.post_main_image {
+
+}
+
+.post_other_image {
+
+}
+
+/* Individual Post Page: nikhilthota.com/post/ */
+
+.post_container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  margin: 30px auto 30px auto;
+  padding: 0 12px 0 12px;
+  
+}
+
+.post_content {
+  font-style: normal;
+  line-height: 1.4em;
+  margin-top: 16px;
+  line-height: 150%;
+  max-width: 600px;
+  text-align: left;
+}
+
+/* Main Page: nikhilthota.com */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  transform: translateY(10%);
+  padding: 0 12px 0 12px;
+}
+
+.post_list {
   max-width: 500px;
   list-style: none;
   padding: 0;
@@ -65,6 +143,29 @@ a:hover, a:active {
   margin-bottom: 20px;
 }
 
+.post_date {
+  margin-top: 4px;
+  font-style: italic;
+}
+
+.writing_blurb {
+  font-style: italic;
+}
+
+.nikhil {
+  width: 200px;
+}
+
+/* Author Section */
+
+.author_container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
 .author_list {
   list-style: none;
   padding-left: 0;
@@ -73,12 +174,12 @@ a:hover, a:active {
   justify-content: space-evenly;
 }
 
-.post_date {
-  margin-top: 4px;
-  font-style: italic;
+.small_nikhil {
+  width: 120px;
+  margin-right: 40px;
 }
 
-.post_divider {
+.author_icon_list {
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -89,63 +190,9 @@ a:hover, a:active {
   margin-bottom: 0px;
 }
 
-.writing_blurb {
-  font-style: italic;
-}
+/* Icon Lists */
 
-.linkButton:link  {
-  border-bottom-style: none;
-}
-
-.nikhil {
-  width: 200px;
-}
-
-.small_nikhil {
-  width: 120px;
-  margin-right: 40px;
-}
-
-.author_container {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  align-items: center;
-  /* margin: 30px auto 30px auto; */
-  justify-content: center;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  position: relative;
-  transform: translateY(10%);
-  padding: 0 12px 0 12px;
-}
-
-.post-container {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  position: relative;
-  margin: 30px auto 30px auto;
-  padding: 0 12px 0 12px;
-  
-}
-
-.post-content {
-  font-style: normal;
-  line-height: 1.4em;
-  margin-top: 16px;
-  line-height: 150%;
-  max-width: 600px;
-  text-align: left;
-}
-
-.divider {
+.icon_list {
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -190,7 +237,7 @@ a:hover, a:active {
   background-image: url(../images/github.png);
 }
 
-.linkButton {
+.link_button {
   width: 36px;
   height: 36px;
   background-position: center;
@@ -206,7 +253,11 @@ a:hover, a:active {
   padding: 0px;
 }
 
-.smallButton {
+.link_button:link  {
+  border-bottom-style: none;
+}
+
+.small_button {
   width: 24px;
   height: 24px;
   background-position: center;
@@ -222,41 +273,6 @@ a:hover, a:active {
   margin-left: 4px;
   padding: 0px;
 }
-
-/* Post Element Re-styling */
-
-hr {
-  margin-top: 30px;
-  padding-bottom: 20px;
-  border: none;
-  text-align: center;
-  font-size: 20px;
-  font-family: medium-content-slab-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
-}
-
-hr::before {
-  content: "...";
-  text-indent: 0.6em;
-  letter-spacing: 1em;
-  line-height: 2;
-  font-style: italic;
-}
-
-blockquote {
-  margin: 0;
-  padding-left: 1.4rem;
-  position: relative;
-}
-
-blockquote::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background: #c5c4c4;
-    border-radius: 2px / 4px;
-  }
 
 /* For non-mobile devices */
 @media (min-width: 48em) {
