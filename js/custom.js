@@ -1,7 +1,19 @@
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+// Google Analytics
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', '{{ .Site.GoogleAnalytics }}', 'auto');
 
-ga('create', 'UA-98779661-1', 'auto');
+// Extras (https://github.com/googleanalytics/autotrack)
+ga('require', 'outboundLinkTracker');
+ga('require', 'mediaQueryTracker');
+ga('require', 'impressionTracker');
+ga('require', 'maxScrollTracker');
+ga('require', 'pageVisibilityTracker');
+
 ga('send', 'pageview');
+
+// Prevent copying images
+document.addEventListener('contextmenu', event => {
+    if (event.target.tagName === 'IMG') {
+        event.preventDefault()
+    }
+});
