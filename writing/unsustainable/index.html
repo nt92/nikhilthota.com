@@ -33,6 +33,54 @@
 <link rel=canonical href=https://nikhilthota.com/writing/unsustainable/>
 </head>
 <body>
+<nav id=navbar>
+<div class=navbar_container>
+<div class=navbar_title>
+<a href=/ class="image_link avatar_link">
+<img class="nikhil mini" src=https://nikhilthota.com/images/nikhil-v2-card-small.png>
+</a>
+<a href=/ class="navbar_link image_link"><h2>Nikhil Thota</h2></a>
+</div>
+<div class=navbar_actions>
+<a href=/now class=image_link><b class=navbar_emoji>📍</b><span>now</span></a>
+<a href=/writing class=image_link><b class=navbar_emoji>✍🏽</b><span>writing</span></a>
+<a href=/travel class=image_link><b class=navbar_emoji>🌎</b><span>travel</span></a>
+<a href=/notes class=image_link><b class=navbar_emoji>📝</b><span>notes</span></a>
+<a href=/projects class=image_link><b class=navbar_emoji>⚒️</b><span>projects</span></a>
+</div>
+<div class=navbar_external>
+<a class="twitter link_button image_link" href=https://twitter.com/nikhilthota></a>
+<a class="github link_button image_link" href=https://github.com/nt92></a>
+<a class="goodreads link_button image_link" href=https://www.goodreads.com/user/show/36837307-nikhil-thota></a>
+<a class="spotify link_button image_link" href=https://open.spotify.com/user/1245029147></a>
+<a class="linkedin link_button image_link" href=https://www.linkedin.com/in/nikhil-thota-ab2731104/></a>
+</div>
+<div class=navbar_hamburger>
+<div style=font-size:32px;cursor:pointer onclick=openNav()>&#9776;</div>
+</div>
+</div>
+<script>var navbarElem=document.getElementById("navbar"),navClasses=navbarElem.classList,navbarHeight=navbarElem.clientHeight,scrollTop,scrollState,scrollDetect;function downAction(){navClasses.remove("open"),navClasses.add("collapse")}function upAction(){navClasses.remove("collapse"),navClasses.add("open")}scrollTop=function(){return window.scrollY},scrollState=0,scrollDetect=function(b,c){var a=scrollTop();a>scrollState&&a>navbarHeight/3?b():a<scrollState&&c(),scrollState=scrollTop()},window.addEventListener("scroll",function(){scrollDetect(downAction,upAction)})</script>
+</nav>
+<div id=myNav class=overlay>
+<div style=font-size:32px;cursor:pointer;margin-left:auto;width:32px onclick=closeNav()>&#215;</div>
+<div class=overlay_content>
+<a href=/now class=image_link><b class=navbar_emoji>📍</b> <span>now</span></a>
+<a href=/writing class=image_link><b class=navbar_emoji>✍🏽</b> <span>writing</span></a>
+<a href=/travel class=image_link><b class=navbar_emoji>🌎</b> <span>travel</span></a>
+<a href=/notes class=image_link><b class=navbar_emoji>📝</b> <span>notes</span></a>
+<a href=/projects class=image_link><b class=navbar_emoji>⚒️</b> <span>projects</span></a>
+<a href=mailto:nthota92@gmail.com class=image_link><b class=navbar_emoji>📬</b> <span>email me</span></a>
+</div>
+<div class=navbar_external_overlay>
+<a class="twitter link_button image_link" href=https://twitter.com/nikhilthota></a>
+<a class="github link_button image_link" href=https://github.com/nt92></a>
+<a class="goodreads link_button image_link" href=https://www.goodreads.com/user/show/36837307-nikhil-thota></a>
+<a class="spotify link_button image_link" href=https://open.spotify.com/user/1245029147></a>
+<a class="linkedin link_button image_link" href=https://www.linkedin.com/in/nikhil-thota-ab2731104/></a>
+<a class="tinyletter link_button image_link" href=https://tinyletter.com/nikhilthota></a>
+</div>
+</div>
+<script>function openNav(){document.getElementById("myNav").style.width="100%"}function closeNav(){document.getElementById("myNav").style.width="0%"}</script>
 <div class="progress-container fixed-top">
 <span class=progress-bar></span>
 </div>
