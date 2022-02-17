@@ -1,0 +1,219 @@
+<!doctype html><html lang=en><head>
+<title> Building a Memex </title>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="Building a modern version of the original 'second brain' by synthezing multiple data sources together into a cohesive system to search through my cruft of information.">
+<meta name=keywords content="Tinker,Knowledge Management,Notes">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nikhilthota.com/projects/memex/">
+<meta property="og:secure_url" content="https://nikhilthota.com/article_images/memex/memex.png">
+<meta property="og:title" content="Building a Memex">
+<meta property="og:description" content="Building a modern version of the original 'second brain' by synthezing multiple data sources together into a cohesive system to search through my cruft of information.">
+<meta property="og:image" content="https://nikhilthota.com/article_images/memex/memex.png">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:domain content="https://nikhilthota.com">
+<meta name=twitter:title content="Building a Memex">
+<meta name=twitter:description content="Building a modern version of the original 'second brain' by synthezing multiple data sources together into a cohesive system to search through my cruft of information.">
+<meta name=twitter:image content="https://nikhilthota.com/article_images/memex/memex.png">
+<meta name=twitter:url content="https://nikhilthota.com/projects/memex/">
+<meta name=twitter:creator content="@nikhilthota">
+<meta name=twitter:site content="@nikhilthota">
+<meta name=twitter:label1 content="Posted on">
+<meta name=twitter:data1 content="August 3, 2021">
+<meta name=twitter:label2 content="Reading time">
+<meta name=twitter:data2 content="7 mins ⏱">
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-98779661-1"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','UA-98779661-1')</script>
+<script src=//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js></script>
+<link rel=stylesheet href=https://nikhilthota.com/sass/main.min.a14ba79adc1eafbbb6514c0227721b4eac9b5252fe593161654c24aaf995ae92.css>
+<script src=https://code.iconify.design/2/2.0.3/iconify.min.js></script>
+<link rel=stylesheet href=https://unicons.iconscout.com/release/v2.1.6/css/unicons.css>
+<link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%f0%9f%a7%a0</text></svg>">
+<script src=https://nikhilthota.com/js/custom.js></script>
+<link rel=canonical href=https://nikhilthota.com/projects/memex/>
+</head>
+<body>
+<nav id=navbar>
+<div class=navbar_container>
+<div class=navbar_title>
+<a href=/ class="image_link avatar_link">
+<img class="nikhil mini" src=https://nikhilthota.com/images/nikhil-v2-card-small.png>
+</a>
+<a href=/ class="navbar_link image_link"><h2>Nikhil Thota</h2></a>
+</div>
+<div class=navbar_actions>
+<a href=/now class=image_link><b class=navbar_emoji>📍</b> <span>now</span></a>
+<a href=https://brain.nikhilthota.com/ class=image_link><b class=navbar_emoji>🧠</b> <span>brain</span></a>
+<a href=/writing class=image_link><b class=navbar_emoji>✍🏽</b> <span>writing</span></a>
+<a href=/travel class=image_link><b class=navbar_emoji>🌎</b> <span>travel</span></a>
+<a href=/projects class=image_link><b class=navbar_emoji>⚒️</b> <span>projects</span></a>
+</div>
+<div class=navbar_external>
+<a class="link_button image_link" href=https://twitter.com/nikhilthota><span class=iconify data-icon=logos:twitter></span></a>
+<a class="link_button image_link" href=https://github.com/nt92><span class=iconify data-icon=akar-icons:github-fill></span></a>
+<a class="link_button image_link" href=https://www.goodreads.com/user/show/36837307-nikhil-thota><span class=iconify data-icon=cib:goodreads></span></a>
+<a class="link_button image_link" href=https://open.spotify.com/user/1245029147><span class=iconify data-icon=logos:spotify-icon></span></a>
+<a class="link_button image_link" href=https://www.linkedin.com/in/nikhil-thota-ab2731104/><span class=iconify data-icon=akar-icons:linkedin-fill></span></a>
+</div>
+<div class=navbar_hamburger>
+<div style=font-size:32px;cursor:pointer onclick=openNav()>&#9776;</div>
+</div>
+</div>
+<script>var navbarElem=document.getElementById("navbar"),navClasses=navbarElem.classList,navbarHeight=navbarElem.clientHeight,scrollTop,scrollState,scrollDetect;function downAction(){navClasses.remove("open"),navClasses.add("collapse")}function upAction(){navClasses.remove("collapse"),navClasses.add("open")}scrollTop=function(){return window.scrollY},scrollState=0,scrollDetect=function(b,c){var a=scrollTop();a>scrollState&&a>navbarHeight/3?b():a<scrollState&&c(),scrollState=scrollTop()},window.addEventListener("scroll",function(){scrollDetect(downAction,upAction)})</script>
+</nav>
+<div id=myNav class=overlay>
+<div style=font-size:32px;cursor:pointer;margin-left:auto;width:32px onclick=closeNav()>&#215;</div>
+<div class=overlay_content>
+<a href=/now class=image_link><b class=navbar_emoji>📍</b> <span>now</span></a>
+<a href=https://brain.nikhilthota.com/ class=image_link><b class=navbar_emoji>🧠</b> <span>brain</span></a>
+<a href=/writing class=image_link><b class=navbar_emoji>✍🏽</b> <span>writing</span></a>
+<a href=/travel class=image_link><b class=navbar_emoji>🌎</b> <span>travel</span></a>
+<a href=/projects class=image_link><b class=navbar_emoji>⚒️</b> <span>projects</span></a>
+<a href=mailto:nthota92@gmail.com class=image_link><b class=navbar_emoji>📬</b> <span>email me</span></a>
+<a href=/resume.pdf class=image_link><b class=navbar_emoji>📝</b> <span>my resume</span></a>
+</div>
+<div class=navbar_external_overlay>
+<a class="link_button image_link" href=https://twitter.com/nikhilthota><span class=iconify data-icon=logos:twitter></span></a>
+<a class="link_button image_link" href=https://github.com/nt92><span class=iconify data-icon=akar-icons:github-fill></span></a>
+<a class="link_button image_link" href=https://www.goodreads.com/user/show/36837307-nikhil-thota><span class=iconify data-icon=cib:goodreads></span></a>
+<a class="link_button image_link" href=https://open.spotify.com/user/1245029147><span class=iconify data-icon=logos:spotify-icon></span></a>
+<a class="link_button image_link" href=https://www.linkedin.com/in/nikhil-thota-ab2731104/><span class=iconify data-icon=akar-icons:linkedin-fill></span></a>
+<a class="link_button image_link" href=https://tinyletter.com/nikhilthota><span class=iconify data-icon=simple-icons:tinyletter></span></a>
+</div>
+</div>
+<script>function openNav(){document.getElementById("myNav").style.width="100%",document.getElementsByTagName("body")[0].style.overflow="hidden"}function closeNav(){document.getElementById("myNav").style.width="0%",document.getElementsByTagName("body")[0].style.overflow="visible"}</script>
+<div class="progress-container fixed-top">
+<span class=progress-bar></span>
+</div>
+<div class=post_container>
+<div class=author_container>
+<a href=/ class=image_link><img class="nikhil small" src=https://nikhilthota.com/images/nikhil-v2-fade-small.png></img></a>
+<div class=author_right>
+<ul class=author_list>
+<li class=post_author>
+<a class=yellow_link href=/>Nikhil Thota</a>
+</li>
+<li>
+<div class=author_icon_list>
+<table>
+<tr>
+<a class="link_button image_link" href=https://twitter.com/nikhilthota><span class=iconify data-icon=logos:twitter></span></a>
+<a class="link_button image_link" href=https://github.com/nt92><span class=iconify data-icon=akar-icons:github-fill></span></a>
+<a class="link_button image_link" href=https://www.linkedin.com/in/nikhil-thota-ab2731104/><span class=iconify data-icon=akar-icons:linkedin-fill></span></a>
+</tr>
+</table>
+</div>
+</li>
+<li class=post_date>
+Aug. 3, 2021
+</li>
+</ul>
+</div>
+</div>
+<div class=article_header>
+<h1>Building a Memex</h1>
+<p class=reading_time>
+7
+min read —
+<span><a href=/tags/tinker/>#Tinker</a></span>
+<span><a href=/tags/knowledge-management/>#Knowledge Management</a></span>
+<span><a href=/tags/notes/>#Notes</a></span>
+</p>
+<h2>Building a modern version of the original 'second brain' by synthezing multiple data sources together into a cohesive system to search through my cruft of information.</h2>
+</div>
+<article class=post_content>
+<p>
+<a href=https://tinyletter.com/nikhilthota/letters/s02-e05-on-booling-knowledge-management-tooling target=_self rel="noreferrer noopener">This was originally posted on my newsletter.</a></p>
+<p>A few weeks ago I came across this tweet from Linus, better known as
+<a href=https://twitter.com/thesephist target=_self rel="noreferrer noopener">@thesephist</a>:</p>
+<blockquote class=twitter-tweet><p lang=en dir=ltr>NEW PROJECT — I made a "personal search engine" that lets me search all my blogs, tweets, journals, notes, contacts, & more at once 🚀<br><br>It's called Monocle, and features a full text search system written in Ink 👇<br><br>GitHub ⌨️ <a href=https://t.co/XWtiCr5CmZ>https://t.co/XWtiCr5CmZ</a><br>Demo 🔍 <a href=https://t.co/8nhS8M3Du3>https://t.co/8nhS8M3Du3</a> <a href=https://t.co/rfurqpmaXc>pic.twitter.com/rfurqpmaXc</a></p>&mdash; Linus (@thesephist) <a href="https://twitter.com/thesephist/status/1412956530220093448?ref_src=twsrc%5Etfw">July 8, 2021</a></blockquote>
+<script async src=https://platform.twitter.com/widgets.js></script>
+<p>Over a weekend, Linus collected a bunch of his personal data (blog posts, tweets, journal entries, etc.) into a system that would allow him to search through everything on demand. He essentially built a prototype of Vannevar Bush&rsquo;s memex, which Bush defined as <em>&ldquo;a device in which an individual stores all their books, records, and communications to supplement their memory&rdquo;.</em></p>
+<p>Why is this even useful? The human brain isn&rsquo;t designed to store the vast amounts of information that we create in our modern world. It can approximate this ability to some extent by surfacing thing in associative contexts (going from the word &ldquo;gray&rdquo; ⬜️ -> gray dog 🐩 -> your childhood dog sparky 🥺 -> a memory of the time he ate your homework 🧾). However, storing data isn&rsquo;t what the brain is best at — it&rsquo;s best at forming connections from information that it loads into working memory.</p>
+<p>This is why I&rsquo;m so obsessed with knowledge management and can spend hours sorting out my thoughts & learning into the right contexts. The closest thing I&rsquo;ve come to having my own memex is my
+<a href=https://roamresearch.com/ target=_self rel="noreferrer noopener">Roam Research</a> graph, but even that has its limitations. Everything I can find in my Roam is something that I&rsquo;ve actively parsed through and taken the time to write down. <strong>What about the vast amounts of memories, experiences, insight, and information that don&rsquo;t get written down?</strong></p>
+<p>This question is what has inspired me to start this next side-project: my own memex, which will serve as what Linus dubs a <em>&ldquo;personal search engine&rdquo;.</em> I&rsquo;m sure there are services out there that do the job, but I think the value of building my own system outweighs the time commitment. I much prefer that a system that I create has access to the <em>very</em> personal data, images, and messages that I hope to feed to it. Some of this data, including my journal entries are some of my most private and cherished possessions, and the last thing I would want is some lame SaaS company to have access to all of this. <strong>I want ownership of my own data.</strong></p>
+<p>So, how am I going to do this? To start, I&rsquo;ll need to figure out exactly what data stores I want to include in this system — here&rsquo;s a non-exhaustive list to get started:</p>
+<ul>
+<li>My Roam Research graph: I back this up twice a day to a private GitHub repo in various formats (including <code>.json</code> which I will format all of my data into).</li>
+<li>Google Data: For better or for worse, Google collects data on everything you do in their all-encompassing products (unless you opt out) which you can access and download through
+<a href=https://takeout.google.com/ target=_self rel="noreferrer noopener">Google Takeout</a>. This includes search history, YouTube watch history, Chrome history, location history, among many other things.</li>
+<li>Publicly shared content: This includes all of my
+<a href=https://nikhilthota.com/ target=_self rel="noreferrer noopener">blog posts</a> and
+<a href=https://twitter.com/nikhilthota target=_self rel="noreferrer noopener">tweets</a> mostly.</li>
+<li>Text Messages: As an iPhone user, I can download all of my text & iMessage data into a
+<a href=https://spin.atomicobject.com/2020/05/22/search-imessage-sql/ target=_self rel="noreferrer noopener">SQLite database</a> — it&rsquo;s a bit technically involved but that&rsquo;s what you get when poking into Apple&rsquo;s fortresses.</li>
+<li>Messenger Data: Most of my Facebook data isn&rsquo;t very useful except for my messaging data, which can easily be accessed and download through the
+<a href=https://www.facebook.com/dyi/ target=_self rel="noreferrer noopener">DYI tool</a>.</li>
+<li>Twitter Likes: This data set has likely some of the highest signal-to-ratio of my consumed information. Unfortunately, the only way to access this is through their
+<a href=https://developer.twitter.com/en/docs/twitter-api/v1/tweets/post-and-engage/api-reference/get-favorites-list target=_self rel="noreferrer noopener">public API</a> which isn&rsquo;t meant for this purpose (it can only get you your latest 20 likes).</li>
+<li>Pocket Content: Most of the interesting articles I find on the internet are saved to
+<a href=https://getpocket.com/ target=_self rel="noreferrer noopener">Pocket</a>. It wouldn&rsquo;t make much sense to index every webpage I&rsquo;ve come across on the internet, so maybe a curated list of articles that I&rsquo;ve actively saved would be more useful.</li>
+</ul>
+<p>When building a memex, I see two approaches to solving the problem of sorting & organizing all of your personal data: (1) the <em>&ldquo;personal search engine&rdquo;</em> approach (which I am moving forward with) and (2) the <em>&ldquo;daily dashboard & timeline&rdquo;</em> approach. The latter is something that
+<a href=https://hyfen.net/memex target=_self rel="noreferrer noopener">Andrew Louis</a> has worked on for a few years now. His system is searchable with a customized query language but isn&rsquo;t a search engine in the purest sense of the term.</p>
+<p>With all of this data, I think that context is valuable and that is where I can take a page out of Andrew&rsquo;s system. When did I first write a note, take a picture, or send a message? What was the temperature like that day and what else might have influenced my state of mind? Context is crucial when searching for information on the internet, and even more-so when considering information that you&rsquo;ve personally created & consumed. By using this context to inform your thinking, you&rsquo;re building stronger self-awareness into your life and future decisions. In the best world, this turns into a virtuous cycle that further improves your own knowledge graph.</p>
+<p>So, what is the most important piece of context to make sure I include? <strong>TIME</strong>. Knowing when I wrote something, liked something, consumed something, or otherwise captured something will be crucial for deriving other data points like items that show up on the same day or other details about what that day was like.</p>
+<p>What are the steps to building this?</p>
+<ol>
+<li>Clean and parse data into uniform <code>.json</code> format for all data sources. This will undoubtedly be the hardest and most time-consuming part, since I&rsquo;ll be glueing together various APIs and datasets into something useful. The data is also liable to change without notice, breaking something in the process. And finally, this will also need periodic maintenance so that I can update the data over time until I automate the collect & import process.</li>
+<li>The next step is to index the data so that it&rsquo;s searchable.
+<a href=https://sibelius.substack.com/p/human-search-engine target=_self rel="noreferrer noopener">Indexing</a> simply means creating a uniform data structure around your disparate heaps of data so that you can quickly retrieve and process information.</li>
+<li>Once we have all of our data in a format that is readable by the machine, we can work on the actual search algorithm. I don&rsquo;t need to reinvent the wheel here and can simply use the best existing
+<a href=https://en.wikipedia.org/wiki/Full-text_search target=_self rel="noreferrer noopener">full-text search algorithm</a> This should be able to sort the returned data from a search input through some measure of relevance. This should also be able to return a number of specified items so we can paginate on the UI. Which brings me to&mldr;</li>
+<li>The UI! Once we have a system that has ingested all relevant data and can sort & search through a term given to it, we will need to build a UI that can let the user do it in an intuitive way. I really like how Linus built
+<a href=https://monocle.surge.sh/ target=_self rel="noreferrer noopener">Monocle</a> and will likely draw a lot of inspiration from his UI once I get this far.</li>
+</ol>
+<p>There you have it. This is a project that will take some time to build properly, but is something that has a lot of potential to be expanded in many directions once I get the MVP out (a tool that can search through all my data). Here are some long-term use-cases that I can see myself eventually building out.</p>
+<ul>
+<li>A day context for any given note (what weather was like, what you did, where you went, etc.)</li>
+<li>Day timeline that can give you an overview of what the day was actually like</li>
+<li>Automated habit creation (since you know quantitatively what happened on a given day)</li>
+<li>Twilio integration for auto-tagging certain things that I want to notate (if I choose to) like people I was with, off-hand activities, etc.</li>
+<li>To scale this beyond myself, turn this product into an electron app with data on a local database or personal cloud so that there&rsquo;s minimal data privacy issues</li>
+</ul>
+</article>
+<footer class=post_footer>
+<hr>
+<div class=footer_cta>
+<div class=footer_blurb>
+<p>Thanks for reading! If you enjoy my site, you can subscribe via
+<a class=yellow_link href=/index.xml>RSS</a>, peep me on
+<a href=https://twitter.com/nikhilthota target=_blank>Twitter</a>,
+check out my other <a class=yellow_link href=/>writing</a>, or
+follow my <a href=https://tinyletter.com/nikhilthota target=_blank>newsletter</a>.</p>
+</div>
+<form class=tinyletter action=https://tinyletter.com/nikhilthota method=post target=popupwindow onsubmit="return window.open('https://tinyletter.com/nikhilthota','popupwindow','scrollbars=yes,width=800,height=600'),!0">
+<div class=tinyletter-input>
+<input type=text placeholder="Your Email" name=email id=tlemail>
+<button class=submit_button type=submit>Subscribe</button>
+<input type=hidden value=1 name=embed>
+</div>
+</form>
+</div>
+<hr>
+<div class=adjacent_posts>
+<div class=prev>
+<a class="image_link prev_link" href=https://nikhilthota.com/projects/brain/>
+<i class="uil uil-enter"></i>
+<h3>Digital Garden & Second Brain</h3>
+</a>
+</div>
+<div class=next>
+<a class="image_link next_link" href=https://nikhilthota.com/projects/python-mind-exploration/>
+<h3>Exploring My Mind With Python </h3>
+<i class="uil uil-corner-down-right-alt"></i>
+</a>
+</div>
+</div>
+<figure class=banner_footer>
+<img src=/images/footer_banner.png></img>
+</figure>
+<div id=snackbar>
+<script src=/js/permalink.js></script>
+<script src=/js/post_footer.js></script>
+</footer>
+</div>
+<script>function scrollProgressBar(){var b=function(){return $(document).height()-$(window).height()},h=function(){return $(window).scrollTop()},f=$(".progress-bar"),d=b(),g=function(){return e=h(),a=e/d*100,a=a+"%",a},c=function(){f.css({width:g()})},e,a;$(document).on("scroll",c),$(window).on("resize",function(){d=b(),c()})}$(document).ready(function(){scrollProgressBar()})</script>
+</body>
+</html>

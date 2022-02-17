@@ -1,0 +1,200 @@
+<!doctype html><html lang=en><head>
+<title> Exploring My Mind With Python </title>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="Leveraging automation with Python to send myself my own journal entries daily.">
+<meta name=keywords content="Technology,Code,Tinker">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nikhilthota.com/projects/python-mind-exploration/">
+<meta property="og:secure_url" content="https://nikhilthota.com/article_images/python_1.jpg">
+<meta property="og:title" content="Exploring My Mind With Python">
+<meta property="og:description" content="Leveraging automation with Python to send myself my own journal entries daily.">
+<meta property="og:image" content="https://nikhilthota.com/article_images/python_1.jpg">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:domain content="https://nikhilthota.com">
+<meta name=twitter:title content="Exploring My Mind With Python">
+<meta name=twitter:description content="Leveraging automation with Python to send myself my own journal entries daily.">
+<meta name=twitter:image content="https://nikhilthota.com/article_images/python_1.jpg">
+<meta name=twitter:url content="https://nikhilthota.com/projects/python-mind-exploration/">
+<meta name=twitter:creator content="@nikhilthota">
+<meta name=twitter:site content="@nikhilthota">
+<meta name=twitter:label1 content="Posted on">
+<meta name=twitter:data1 content="May 25, 2019">
+<meta name=twitter:label2 content="Reading time">
+<meta name=twitter:data2 content="3 mins ⏱">
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-98779661-1"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','UA-98779661-1')</script>
+<script src=//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js></script>
+<link rel=stylesheet href=https://nikhilthota.com/sass/main.min.a14ba79adc1eafbbb6514c0227721b4eac9b5252fe593161654c24aaf995ae92.css>
+<script src=https://code.iconify.design/2/2.0.3/iconify.min.js></script>
+<link rel=stylesheet href=https://unicons.iconscout.com/release/v2.1.6/css/unicons.css>
+<link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%f0%9f%a7%a0</text></svg>">
+<script src=https://nikhilthota.com/js/custom.js></script>
+<link rel=canonical href=https://nikhilthota.com/projects/python-mind-exploration/>
+</head>
+<body>
+<nav id=navbar>
+<div class=navbar_container>
+<div class=navbar_title>
+<a href=/ class="image_link avatar_link">
+<img class="nikhil mini" src=https://nikhilthota.com/images/nikhil-v2-card-small.png>
+</a>
+<a href=/ class="navbar_link image_link"><h2>Nikhil Thota</h2></a>
+</div>
+<div class=navbar_actions>
+<a href=/now class=image_link><b class=navbar_emoji>📍</b> <span>now</span></a>
+<a href=https://brain.nikhilthota.com/ class=image_link><b class=navbar_emoji>🧠</b> <span>brain</span></a>
+<a href=/writing class=image_link><b class=navbar_emoji>✍🏽</b> <span>writing</span></a>
+<a href=/travel class=image_link><b class=navbar_emoji>🌎</b> <span>travel</span></a>
+<a href=/projects class=image_link><b class=navbar_emoji>⚒️</b> <span>projects</span></a>
+</div>
+<div class=navbar_external>
+<a class="link_button image_link" href=https://twitter.com/nikhilthota><span class=iconify data-icon=logos:twitter></span></a>
+<a class="link_button image_link" href=https://github.com/nt92><span class=iconify data-icon=akar-icons:github-fill></span></a>
+<a class="link_button image_link" href=https://www.goodreads.com/user/show/36837307-nikhil-thota><span class=iconify data-icon=cib:goodreads></span></a>
+<a class="link_button image_link" href=https://open.spotify.com/user/1245029147><span class=iconify data-icon=logos:spotify-icon></span></a>
+<a class="link_button image_link" href=https://www.linkedin.com/in/nikhil-thota-ab2731104/><span class=iconify data-icon=akar-icons:linkedin-fill></span></a>
+</div>
+<div class=navbar_hamburger>
+<div style=font-size:32px;cursor:pointer onclick=openNav()>&#9776;</div>
+</div>
+</div>
+<script>var navbarElem=document.getElementById("navbar"),navClasses=navbarElem.classList,navbarHeight=navbarElem.clientHeight,scrollTop,scrollState,scrollDetect;function downAction(){navClasses.remove("open"),navClasses.add("collapse")}function upAction(){navClasses.remove("collapse"),navClasses.add("open")}scrollTop=function(){return window.scrollY},scrollState=0,scrollDetect=function(b,c){var a=scrollTop();a>scrollState&&a>navbarHeight/3?b():a<scrollState&&c(),scrollState=scrollTop()},window.addEventListener("scroll",function(){scrollDetect(downAction,upAction)})</script>
+</nav>
+<div id=myNav class=overlay>
+<div style=font-size:32px;cursor:pointer;margin-left:auto;width:32px onclick=closeNav()>&#215;</div>
+<div class=overlay_content>
+<a href=/now class=image_link><b class=navbar_emoji>📍</b> <span>now</span></a>
+<a href=https://brain.nikhilthota.com/ class=image_link><b class=navbar_emoji>🧠</b> <span>brain</span></a>
+<a href=/writing class=image_link><b class=navbar_emoji>✍🏽</b> <span>writing</span></a>
+<a href=/travel class=image_link><b class=navbar_emoji>🌎</b> <span>travel</span></a>
+<a href=/projects class=image_link><b class=navbar_emoji>⚒️</b> <span>projects</span></a>
+<a href=mailto:nthota92@gmail.com class=image_link><b class=navbar_emoji>📬</b> <span>email me</span></a>
+<a href=/resume.pdf class=image_link><b class=navbar_emoji>📝</b> <span>my resume</span></a>
+</div>
+<div class=navbar_external_overlay>
+<a class="link_button image_link" href=https://twitter.com/nikhilthota><span class=iconify data-icon=logos:twitter></span></a>
+<a class="link_button image_link" href=https://github.com/nt92><span class=iconify data-icon=akar-icons:github-fill></span></a>
+<a class="link_button image_link" href=https://www.goodreads.com/user/show/36837307-nikhil-thota><span class=iconify data-icon=cib:goodreads></span></a>
+<a class="link_button image_link" href=https://open.spotify.com/user/1245029147><span class=iconify data-icon=logos:spotify-icon></span></a>
+<a class="link_button image_link" href=https://www.linkedin.com/in/nikhil-thota-ab2731104/><span class=iconify data-icon=akar-icons:linkedin-fill></span></a>
+<a class="link_button image_link" href=https://tinyletter.com/nikhilthota><span class=iconify data-icon=simple-icons:tinyletter></span></a>
+</div>
+</div>
+<script>function openNav(){document.getElementById("myNav").style.width="100%",document.getElementsByTagName("body")[0].style.overflow="hidden"}function closeNav(){document.getElementById("myNav").style.width="0%",document.getElementsByTagName("body")[0].style.overflow="visible"}</script>
+<div class="progress-container fixed-top">
+<span class=progress-bar></span>
+</div>
+<div class=post_container>
+<div class=author_container>
+<a href=/ class=image_link><img class="nikhil small" src=https://nikhilthota.com/images/nikhil-v2-fade-small.png></img></a>
+<div class=author_right>
+<ul class=author_list>
+<li class=post_author>
+<a class=yellow_link href=/>Nikhil Thota</a>
+</li>
+<li>
+<div class=author_icon_list>
+<table>
+<tr>
+<a class="link_button image_link" href=https://twitter.com/nikhilthota><span class=iconify data-icon=logos:twitter></span></a>
+<a class="link_button image_link" href=https://github.com/nt92><span class=iconify data-icon=akar-icons:github-fill></span></a>
+<a class="link_button image_link" href=https://www.linkedin.com/in/nikhil-thota-ab2731104/><span class=iconify data-icon=akar-icons:linkedin-fill></span></a>
+</tr>
+</table>
+</div>
+</li>
+<li class=post_date>
+May. 25, 2019
+</li>
+</ul>
+</div>
+</div>
+<div class=article_header>
+<h1>Exploring My Mind With Python</h1>
+<p class=reading_time>
+3
+min read —
+<span><a href=/tags/technology/>#Technology</a></span>
+<span><a href=/tags/code/>#Code</a></span>
+<span><a href=/tags/tinker/>#Tinker</a></span>
+</p>
+<h2>Leveraging automation with Python to send myself my own journal entries daily.</h2>
+</div>
+<article class=post_content>
+<figure class=main_image><img src=/article_images/python_1.jpg>
+</figure>
+<p>A few months ago at a random Chinatown bar in New York City,
+<a href=http://www.tylerjrichards.com/ target=_self rel="noreferrer noopener">Tyler Richards</a> and I were having a conversation about journaling. I told him that I had over 4 <em>years</em> worth of consistent journal entries and Tyler, being the data-minded person he is, gave me an idea to reinforce the lessons and insights from these journaling sessions.</p>
+<p><strong>The Idea</strong>: A system that emails me a random journal entry every day so I could see exactly what was going on in my mind at that given time.</p>
+<p><strong>The Data</strong>: 600+ journal entries with content length ranging from cool 1-liners to 3 pages of word vomit</p>
+<p>My journal entries are very free-form and stream-of-consciousness so I’m not totally sure if I’ll end up learning anything useful, but I was curious to find out. The first step? Create a database to hold all of my journal entries.</p>
+<h2 id=1-creating-the-database>1. Creating the Database</h2>
+<p>Holding all of my entries in a way that could be easily & efficiently accessed while also providing me the flexibility to add new entries if needed, SQLite was the tool for the job. This
+<a href="https://www.youtube.com/watch?v=pd-0G0MigUA" target=_self rel="noreferrer noopener">tutorial</a> provides a good introduction to understanding how to create and query a local SQLite database with Python.</p>
+<script type=application/javascript src=https://gist.github.com/nt92/e3f48d3532ee9c1496a65e66e44dd1dd.js></script>
+<p><em>Simple 6 lines to create a local database in Python</em></p>
+<h2 id=2-convert-my-google-doc-files-into-usable-data>2. Convert my Google Doc files into usable data</h2>
+<p>The next step was aggregating all of my Google Doc files so that I could go through all of them with a script to extract all entries. Thankfully, I had some semblance of organization with which I separated entries — before each entry, I have a date. Sometimes it’s <em>mm/dd/yy</em>, sometimes <em>dd/mm/yy</em> if I thought I was cool for being in Europe, but there was always a date.</p>
+<p>Once I had all of my files in a folder, I had to figure out how to go through each file and extract every entry. After reading this lovely
+<a href=https://towardsdatascience.com/how-to-extract-data-from-ms-word-documents-using-python-ed3fbb48c122 target=_self rel="noreferrer noopener">post</a>, I decided to go with the
+<a href=https://python-docx.readthedocs.io/en/latest/ target=_self rel="noreferrer noopener">docx</a> Python library to read each file paragraph-by-paragraph and create a new entry in my database every time I ran into a new date.</p>
+<script type=application/javascript src=https://gist.github.com/nt92/3886577b104b5c41e5edbf9de86cf421.js></script>
+<p><em>This shows how I am going through each file and extracting every individual entry based on whether I run into a pattern matching my date formats</em></p>
+<h2 id=3-send-out-a-random-entry-every-day>3. Send out a random entry every day</h2>
+<p>The next step was figuring how to send myself an email with an entry that was fetched from the database created earlier. This
+<a href=https://www.pythonforbeginners.com/code-snippets-source-code/using-python-to-send-email/ target=_self rel="noreferrer noopener">guide</a> went through that process, which is surprisingly easy!</p>
+<script type=application/javascript src=https://gist.github.com/nt92/26f5e4a31f738a89f6304f1f17cf77f3.js></script>
+<p>The final step was scheduling a recurring task that would run this code every morning automatically. Thankfully, Mac has a built-in system for this called
+<a href=https://ole.michelsen.dk/blog/schedule-jobs-with-crontab-on-mac-osx.html target=_self rel="noreferrer noopener">crontab</a>. <em>One issue I ran into was that crontab tasks only run when the computer is active. This was fixed by waking my laptop a minute before the 10am slot when the job was scheduled to run, detailed
+<a href=https://superuser.com/questions/14836/crontab-to-wake-osx-from-sleep target=_self rel="noreferrer noopener">here</a>.</em></p>
+<hr>
+<p>All in all, I learned how to work with local SQLite databases, use Python to leverage data, and schedule recurring tasks on Mac. <strong>Cool</strong>. So what now? I’m going to spend the next couple of months reading a random journal entry daily while traveling to see if I can glean any unique insights from my ramblings.</p>
+<p>See you on the other side and stay tuned for my analysis 🤙🏽</p>
+<p>My full code can be found
+<a href=https://github.com/nt92/Journal-Emailer target=_self rel="noreferrer noopener">here</a>.</p>
+</article>
+<footer class=post_footer>
+<hr>
+<div class=footer_cta>
+<div class=footer_blurb>
+<p>Thanks for reading! If you enjoy my site, you can subscribe via
+<a class=yellow_link href=/index.xml>RSS</a>, peep me on
+<a href=https://twitter.com/nikhilthota target=_blank>Twitter</a>,
+check out my other <a class=yellow_link href=/>writing</a>, or
+follow my <a href=https://tinyletter.com/nikhilthota target=_blank>newsletter</a>.</p>
+</div>
+<form class=tinyletter action=https://tinyletter.com/nikhilthota method=post target=popupwindow onsubmit="return window.open('https://tinyletter.com/nikhilthota','popupwindow','scrollbars=yes,width=800,height=600'),!0">
+<div class=tinyletter-input>
+<input type=text placeholder="Your Email" name=email id=tlemail>
+<button class=submit_button type=submit>Subscribe</button>
+<input type=hidden value=1 name=embed>
+</div>
+</form>
+</div>
+<hr>
+<div class=adjacent_posts>
+<div class=prev>
+<a class="image_link prev_link" href=https://nikhilthota.com/projects/memex/>
+<i class="uil uil-enter"></i>
+<h3>Building a Memex</h3>
+</a>
+</div>
+<div class=next>
+<a class="image_link next_link" href=https://nikhilthota.com/projects/tuna-pasta/>
+<h3>Tuna Pasta </h3>
+<i class="uil uil-corner-down-right-alt"></i>
+</a>
+</div>
+</div>
+<figure class=banner_footer>
+<img src=/images/footer_banner.png></img>
+</figure>
+<div id=snackbar>
+<script src=/js/permalink.js></script>
+<script src=/js/post_footer.js></script>
+</footer>
+</div>
+<script>function scrollProgressBar(){var b=function(){return $(document).height()-$(window).height()},h=function(){return $(window).scrollTop()},f=$(".progress-bar"),d=b(),g=function(){return e=h(),a=e/d*100,a=a+"%",a},c=function(){f.css({width:g()})},e,a;$(document).on("scroll",c),$(window).on("resize",function(){d=b(),c()})}$(document).ready(function(){scrollProgressBar()})</script>
+</body>
+</html>
