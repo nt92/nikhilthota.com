@@ -1,192 +1,40 @@
-<!doctype html><html lang=en><head>
-<title> A Self Experimentation Protocol </title>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="How I quantitatively measure the effect of a self experiment">
-<meta name=keywords content="Notes,Health,Biohacking">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://nikhilthota.com/notes/self-experimentation/">
-<meta property="og:secure_url" content="https://nikhilthota.com/article_images/self-experimentation/xkcd.png">
-<meta property="og:title" content="A Self Experimentation Protocol">
-<meta property="og:description" content="How I quantitatively measure the effect of a self experiment">
-<meta property="og:image" content="https://nikhilthota.com/article_images/self-experimentation/xkcd.png">
-<meta name=twitter:card content="summary_large_image">
-<meta name=twitter:domain content="https://nikhilthota.com">
-<meta name=twitter:title content="A Self Experimentation Protocol">
-<meta name=twitter:description content="How I quantitatively measure the effect of a self experiment">
-<meta name=twitter:image content="https://nikhilthota.com/article_images/self-experimentation/xkcd.png">
-<meta name=twitter:url content="https://nikhilthota.com/notes/self-experimentation/">
-<meta name=twitter:creator content="@nikhilthota">
-<meta name=twitter:site content="@nikhilthota">
-<meta name=twitter:label1 content="Posted on">
-<meta name=twitter:data1 content="June 4, 2021">
-<meta name=twitter:label2 content="Reading time">
-<meta name=twitter:data2 content="4 mins ⏱">
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-98779661-1"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','UA-98779661-1')</script>
-<script src=//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js></script>
-<link rel=stylesheet href=https://nikhilthota.com/sass/main.min.1f876b529d2d5aa6f315c000819ea78ca2fc1c3783d6e8170fd13bc022b88304.css>
-<script src=https://code.iconify.design/2/2.0.3/iconify.min.js></script>
-<link rel=stylesheet href=https://unicons.iconscout.com/release/v2.1.6/css/unicons.css>
-<link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%f0%9f%a7%aa</text></svg>">
-<script src=https://nikhilthota.com/js/custom.js></script>
-<link rel=canonical href=https://nikhilthota.com/notes/self-experimentation/>
-</head>
-<body>
-<nav id=navbar>
-<div class=navbar_container>
-<div class=navbar_title>
-<a href=/ class="image_link avatar_link">
-<img class="nikhil mini" src=https://nikhilthota.com/images/nikhil-v2-card-small.png>
-</a>
-<a href=/ class="navbar_link image_link"><h2>Nikhil Thota</h2></a>
-</div>
-<div class=navbar_actions>
-<a href=https://streamofthots.com class=image_link><b class=navbar_emoji>🌊</b> <span>stream</span></a>
+<!doctype html><html lang=en><head><title>A Self Experimentation Protocol</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="How I quantitatively measure the effect of a self experiment"><meta name=keywords content="Notes,Health,Biohacking"><meta property="og:type" content="website"><meta property="og:url" content="https://nikhilthota.com/notes/self-experimentation/"><meta property="og:secure_url" content="https://nikhilthota.com/article_images/self-experimentation/xkcd.png"><meta property="og:title" content="A Self Experimentation Protocol"><meta property="og:description" content="How I quantitatively measure the effect of a self experiment"><meta property="og:image" content="https://nikhilthota.com/article_images/self-experimentation/xkcd.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:domain content="https://nikhilthota.com"><meta name=twitter:title content="A Self Experimentation Protocol"><meta name=twitter:description content="How I quantitatively measure the effect of a self experiment"><meta name=twitter:image content="https://nikhilthota.com/article_images/self-experimentation/xkcd.png"><meta name=twitter:url content="https://nikhilthota.com/notes/self-experimentation/"><meta name=twitter:creator content="@nikhilthota"><meta name=twitter:site content="@nikhilthota"><meta name=twitter:label1 content="Posted on"><meta name=twitter:data1 content="June 4, 2021"><meta name=twitter:label2 content="Reading time"><meta name=twitter:data2 content="4 mins ⏱"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-98779661-1"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","UA-98779661-1")</script><script src=//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js></script>
+<link rel=stylesheet href=https://nikhilthota.com/sass/main.min.1f876b529d2d5aa6f315c000819ea78ca2fc1c3783d6e8170fd13bc022b88304.css><script src=https://code.iconify.design/2/2.0.3/iconify.min.js></script>
+<link rel=stylesheet href=https://unicons.iconscout.com/release/v2.1.6/css/unicons.css><link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%f0%9f%a7%aa</text></svg>"><script src=https://nikhilthota.com/js/custom.js></script>
+<link rel=canonical href=https://nikhilthota.com/notes/self-experimentation/></head><body><nav id=navbar><div class=navbar_container><div class=navbar_title><a href=/ class="image_link avatar_link"><img class="nikhil mini" src=https://nikhilthota.com/images/nikhil-v2-card-small.png></a>
+<a href=/ class="navbar_link image_link"><h2>Nikhil Thota</h2></a></div><div class=navbar_actions><a href=https://streamofthots.com class=image_link><b class=navbar_emoji>🌊</b> <span>stream</span></a>
 <a href=/writing class=image_link><b class=navbar_emoji>✍🏽</b> <span>writing</span></a>
 <a href=/travel class=image_link><b class=navbar_emoji>🌎</b> <span>travel</span></a>
-<a href=/projects class=image_link><b class=navbar_emoji>⚒️</b> <span>projects</span></a>
-</div>
-<div class=navbar_external>
-<a class="link_button image_link" href=https://twitter.com/nikhilthota><span class=iconify data-icon=logos:twitter></span></a>
+<a href=/projects class=image_link><b class=navbar_emoji>⚒️</b> <span>projects</span></a></div><div class=navbar_external><a class="link_button image_link" href=https://twitter.com/nikhilthota><span class=iconify data-icon=logos:twitter></span></a>
 <a class="link_button image_link" href=https://github.com/nt92><span class=iconify data-icon=akar-icons:github-fill></span></a>
 <a class="link_button image_link" href=https://www.goodreads.com/user/show/36837307-nikhil-thota><span class=iconify data-icon=cib:goodreads></span></a>
 <a class="link_button image_link" href=https://open.spotify.com/user/1245029147><span class=iconify data-icon=logos:spotify-icon></span></a>
 <a class="link_button image_link" href=https://www.linkedin.com/in/thot/><span class=iconify data-icon=akar-icons:linkedin-fill></span></a>
-<a class="link_button image_link" href=https://thot.substack.com/><span class=iconify data-icon=simple-icons:substack></span></a>
-</div>
-<div class=navbar_hamburger>
-<div style=font-size:32px;cursor:pointer onclick=openNav()>&#9776;</div>
-</div>
-</div>
-<script>var navbarElem=document.getElementById("navbar"),navClasses=navbarElem.classList,navbarHeight=navbarElem.clientHeight,scrollTop,scrollState,scrollDetect;function downAction(){navClasses.remove("open"),navClasses.add("collapse")}function upAction(){navClasses.remove("collapse"),navClasses.add("open")}scrollTop=function(){return window.scrollY},scrollState=0,scrollDetect=function(b,c){var a=scrollTop();a>scrollState&&a>navbarHeight/3?b():a<scrollState&&c(),scrollState=scrollTop()},window.addEventListener("scroll",function(){scrollDetect(downAction,upAction)})</script>
-</nav>
-<div id=myNav class=overlay>
-<div style=font-size:32px;cursor:pointer;margin-left:auto;width:32px onclick=closeNav()>&#215;</div>
-<div class=overlay_content>
-<a href=https://streamofthots.com class=image_link><b class=navbar_emoji>🌊</b> <span>stream</span></a>
+<a class="link_button image_link" href=https://thot.substack.com/><span class=iconify data-icon=simple-icons:substack></span></a></div><div class=navbar_hamburger><div style=font-size:32px;cursor:pointer onclick=openNav()>&#9776;</div></div></div><script>var navbarElem=document.getElementById("navbar"),scrollTop,scrollState,scrollDetect,navClasses=navbarElem.classList,navbarHeight=navbarElem.clientHeight;function downAction(){navClasses.remove("open"),navClasses.add("collapse")}function upAction(){navClasses.remove("collapse"),navClasses.add("open")}scrollTop=function(){return window.scrollY},scrollState=0,scrollDetect=function(e,t){var n=scrollTop();n>scrollState&&n>navbarHeight/3?e():n<scrollState&&t(),scrollState=scrollTop()},window.addEventListener("scroll",function(){scrollDetect(downAction,upAction)})</script></nav><div id=myNav class=overlay><div style=font-size:32px;cursor:pointer;margin-left:auto;width:32px onclick=closeNav()>&#215;</div><div class=overlay_content><a href=https://streamofthots.com class=image_link><b class=navbar_emoji>🌊</b> <span>stream</span></a>
 <a href=/writing class=image_link><b class=navbar_emoji>✍🏽</b> <span>writing</span></a>
 <a href=/travel class=image_link><b class=navbar_emoji>🌎</b> <span>travel</span></a>
 <a href=/projects class=image_link><b class=navbar_emoji>⚒️</b> <span>projects</span></a>
 <a href=mailto:nthota92@gmail.com class=image_link><b class=navbar_emoji>📬</b> <span>email me</span></a>
-<a href=/resume.pdf class=image_link><b class=navbar_emoji>📝</b> <span>my resume</span></a>
-</div>
-<div class=navbar_external_overlay>
-<a class="link_button image_link" href=https://twitter.com/nikhilthota><span class=iconify data-icon=logos:twitter></span></a>
+<a href=/resume.pdf class=image_link><b class=navbar_emoji>📝</b> <span>my resume</span></a></div><div class=navbar_external_overlay><a class="link_button image_link" href=https://twitter.com/nikhilthota><span class=iconify data-icon=logos:twitter></span></a>
 <a class="link_button image_link" href=https://github.com/nt92><span class=iconify data-icon=akar-icons:github-fill></span></a>
 <a class="link_button image_link" href=https://www.goodreads.com/user/show/36837307-nikhil-thota><span class=iconify data-icon=cib:goodreads></span></a>
 <a class="link_button image_link" href=https://open.spotify.com/user/1245029147><span class=iconify data-icon=logos:spotify-icon></span></a>
 <a class="link_button image_link" href=https://www.linkedin.com/in/thot/><span class=iconify data-icon=akar-icons:linkedin-fill></span></a>
-<a class="link_button image_link" href=https://thot.substack.com/><span class=iconify data-icon=simple-icons:substack></span></a>
-</div>
-</div>
-<script>function openNav(){document.getElementById("myNav").style.width="100%",document.getElementsByTagName("body")[0].style.overflow="hidden"}function closeNav(){document.getElementById("myNav").style.width="0%",document.getElementsByTagName("body")[0].style.overflow="visible"}</script>
-<div class=post_container>
-<div class=author_container>
-<a href=/ class=image_link><img class="nikhil small" src=https://nikhilthota.com/images/nikhil-v2-fade-small.png></img></a>
-<div class=author_right>
-<ul class=author_list>
-<li class=post_author>
-<a class=yellow_link href=/>Nikhil Thota</a>
-</li>
-<li>
-<div class=author_icon_list>
-<table>
-<tr>
-<a class="link_button image_link" href=https://twitter.com/nikhilthota><span class=iconify data-icon=logos:twitter></span></a>
+<a class="link_button image_link" href=https://thot.substack.com/><span class=iconify data-icon=simple-icons:substack></span></a></div></div><script>function openNav(){document.getElementById("myNav").style.width="100%",document.getElementsByTagName("body")[0].style.overflow="hidden"}function closeNav(){document.getElementById("myNav").style.width="0%",document.getElementsByTagName("body")[0].style.overflow="visible"}</script><div class=post_container><div class=author_container><a href=/ class=image_link><img class="nikhil small" src=https://nikhilthota.com/images/nikhil-v2-fade-small.png></img></a><div class=author_right><ul class=author_list><li class=post_author><a class=yellow_link href=/>Nikhil Thota</a></li><li><div class=author_icon_list><table><tr><a class="link_button image_link" href=https://twitter.com/nikhilthota><span class=iconify data-icon=logos:twitter></span></a>
 <a class="link_button image_link" href=https://github.com/nt92><span class=iconify data-icon=akar-icons:github-fill></span></a>
-<a class="link_button image_link" href=https://www.linkedin.com/in/thot/><span class=iconify data-icon=akar-icons:linkedin-fill></span></a>
-</tr>
-</table>
-</div>
-</li>
-<li class=post_date>
-Jun. 4, 2021
-</li>
-</ul>
-</div>
-</div>
-<div class=article_header>
-<h1>A Self Experimentation Protocol</h1>
-<p class=reading_time>
-4
-min read
-</p>
-</div>
-<article class=post_content>
-<p>
-<a href=https://tinyletter.com/nikhilthota/letters/s02-e03-a-prelude-to-tech-bro-summer target=_self rel="noreferrer noopener">This was originally posted on my newsletter.</a></p>
-<p>This past month, I&rsquo;ve been chowing down on globs of
+<a class="link_button image_link" href=https://www.linkedin.com/in/thot/><span class=iconify data-icon=akar-icons:linkedin-fill></span></a></tr></table></div></li><li class=post_date>Jun. 4, 2021</li></ul></div></div><div class=article_header><h1>A Self Experimentation Protocol</h1><p class=reading_time>4
+min read</p></div><article class=post_content><p><a href=https://tinyletter.com/nikhilthota/letters/s02-e03-a-prelude-to-tech-bro-summer target=_self rel="noreferrer noopener">This was originally posted on my newsletter.</a></p><p>This past month, I&rsquo;ve been chowing down on globs of
 <a href=https://examine.com/supplements/spirulina/ target=_self rel="noreferrer noopener">spirulina</a>,
 <a href=https://examine.com/supplements/chlorella/ target=_self rel="noreferrer noopener">chlorella</a>, and other nutritious micro-algae every day. I&rsquo;m sane I swear — these algae are some of the most dense and bioavailable sources of protein & nutrients available. There is also some
-<a href=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6155420/ target=_self rel="noreferrer noopener">promising research</a> showing that they might protect the brain and improve metabolic function.</p>
-<p>A problem innate to health & nutrition research is that the human body is finicky, and what benefits one person will not necessarily benefit another. This is why I champion personal experimentation through self-administered
-<a href=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3118090/ target=_self rel="noreferrer noopener">n-of-1</a> trials in which you determine for yourself whether a treatment jives with your particular biology. However, even with self-experimentation, it&rsquo;s difficult to extract meaningful insight without a rigorous and well-designed protocol.</p>
-<p>So&mldr; that&rsquo;s what I&rsquo;ll be discussing in this month&rsquo;s newsletter. Instead of doing what I set out to do (write about my experience using algae) — I decided to zoom out and procrastinate by creating a robust system for myself to aid in self-experimentation.</p>
-<figure><img src=/article_images/self-experimentation/xkcd.png alt="source: xkcd"><figcaption>
-<p>source: <a href=https://xkcd.com/974/>xkcd</a></p>
-</figcaption>
-</figure>
-<h3 id=randomized-controlled-trials-rct>Randomized Controlled Trials (RCT)</h3>
-<p>A well-designed RCT is the gold standard for modern scientific & clinical research. The intent is to reduce bias, balance unknown factors, and isolate the exact variables being measured. <strong>How can we take the best aspects of RCTs and apply them to our own self-experimentation?</strong></p>
-<ul>
-<li>Randomization is used when assigning subjects to groups to minimize selection & allocation bias. Since I am the only subject, we&rsquo;ll need to be a bit clever here — I&rsquo;ll need to participate in both experiment groups at different times. I can randomize the order in which I&rsquo;ll participate in any group on any given day. This leads us to blinding.</li>
-<li>Blinding is to (1) prevent the subject from knowing what they are being exposed to and (2) prevent the scientist from unconsciously biasing the results. One way to implement blinding is to get a friend to organize & assort everything, but this is self experimentation we&rsquo;re talking about. Again, we&rsquo;ll need to be clever and simulate blinding by making the test and control items look as similar as possible.
-<a href=https://www.gwern.net/Nootropics#blinding-yourself target=_self rel="noreferrer noopener">Gwern has written a lot on this topic.</a></li>
-<li>Isolation of the control variable is next. Since life is complex and it&rsquo;s impossible to perfectly isolate a variable, there will be some leeway we&rsquo;ll have to live with. As much as possible, I will keep my days standard (or make sure the chaotic energy of life is evenly distributed throughout both test & control windows).</li>
-<li>There are two kinds of data to consider when conducting self-experiments.
-<ul>
-<li>The first is the automagically gathered biometric data from fitness trackers like Oura & Apple Watch or digital usage data from something like RescueTime or Rize.</li>
-<li>The second is subjective sentiment data collected through reflection e.g. &ldquo;how is my energy level today from 1 to 10?&rdquo; which should be specifically tailored to the variable I&rsquo;m looking to test. This also includes qualitative findings that can inform a broader understanding of the results.</li>
-</ul>
-</li>
-<li>Once we have the data, we can run simple analyses like regression to map the incidence of control / test to the collected data. Since biometric & well-being data is bounded and inherently thin-tailed, we can assume
-<a href=https://www.mathsisfun.com/data/standard-normal-distribution.html target=_self rel="noreferrer noopener">Gaussian distribution</a> and find correlations.</li>
-</ul>
-<p>Now that we&rsquo;ve got a basic <em>pseudo-scientific</em> framework for a self-experimentation protocol, how would we apply this to the aforementioned dinner of delicious algae?</p>
-<ol>
-<li>Creating a placebo algae will be tough. One option would be to use a kind of algae with no proven health benefits as the control group and a mishmash of &ldquo;healthy&rdquo; micro-algae as the test group.</li>
-<li>The health benefits of algae take roughly ~1 week to kick in, so we can collect data from the ~1 week after this initial loading phase.</li>
-<li>Thus, I&rsquo;ll need to create a set of test & control algae baggies with 14 globs in each. At the beginning of a 2-week window, I will randomly pick a baggie and take the algae daily until I run out, while collecting data for the latter 7 days.</li>
-<li>During this data collection period, I&rsquo;ll measure a broad swath of health factors like sleep through Oura, general aerobic and athletic performance through my Apple Watch, level of focus during the day through Rize, and subjective levels of well-being and energy.</li>
-<li>Finally, I&rsquo;ll run a few regressions to see if there was any statistically significant increase in my measured health factors by eating algae.
-Doesn&rsquo;t that sound fun? I think so. 🦠</li>
-</ol>
-</article>
-<footer class=post_footer>
-<hr>
-<div class=footer_cta>
-<div class=footer_blurb>
-<p>Thanks for reading! If you enjoy my site, you can subscribe via
+<a href=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6155420/ target=_self rel="noreferrer noopener">promising research</a> showing that they might protect the brain and improve metabolic function.</p><p>A problem innate to health & nutrition research is that the human body is finicky, and what benefits one person will not necessarily benefit another. This is why I champion personal experimentation through self-administered
+<a href=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3118090/ target=_self rel="noreferrer noopener">n-of-1</a> trials in which you determine for yourself whether a treatment jives with your particular biology. However, even with self-experimentation, it&rsquo;s difficult to extract meaningful insight without a rigorous and well-designed protocol.</p><p>So&mldr; that&rsquo;s what I&rsquo;ll be discussing in this month&rsquo;s newsletter. Instead of doing what I set out to do (write about my experience using algae) — I decided to zoom out and procrastinate by creating a robust system for myself to aid in self-experimentation.</p><figure><img src=/article_images/self-experimentation/xkcd.png alt="source: xkcd"><figcaption><p>source:
+<a href=https://xkcd.com/974/ target=_self rel="noreferrer noopener">xkcd</a></p></figcaption></figure><h3 id=randomized-controlled-trials-rct>Randomized Controlled Trials (RCT)</h3><p>A well-designed RCT is the gold standard for modern scientific & clinical research. The intent is to reduce bias, balance unknown factors, and isolate the exact variables being measured. <strong>How can we take the best aspects of RCTs and apply them to our own self-experimentation?</strong></p><ul><li>Randomization is used when assigning subjects to groups to minimize selection & allocation bias. Since I am the only subject, we&rsquo;ll need to be a bit clever here — I&rsquo;ll need to participate in both experiment groups at different times. I can randomize the order in which I&rsquo;ll participate in any group on any given day. This leads us to blinding.</li><li>Blinding is to (1) prevent the subject from knowing what they are being exposed to and (2) prevent the scientist from unconsciously biasing the results. One way to implement blinding is to get a friend to organize & assort everything, but this is self experimentation we&rsquo;re talking about. Again, we&rsquo;ll need to be clever and simulate blinding by making the test and control items look as similar as possible.
+<a href=https://www.gwern.net/Nootropics#blinding-yourself target=_self rel="noreferrer noopener">Gwern has written a lot on this topic.</a></li><li>Isolation of the control variable is next. Since life is complex and it&rsquo;s impossible to perfectly isolate a variable, there will be some leeway we&rsquo;ll have to live with. As much as possible, I will keep my days standard (or make sure the chaotic energy of life is evenly distributed throughout both test & control windows).</li><li>There are two kinds of data to consider when conducting self-experiments.<ul><li>The first is the automagically gathered biometric data from fitness trackers like Oura & Apple Watch or digital usage data from something like RescueTime or Rize.</li><li>The second is subjective sentiment data collected through reflection e.g. &ldquo;how is my energy level today from 1 to 10?&rdquo; which should be specifically tailored to the variable I&rsquo;m looking to test. This also includes qualitative findings that can inform a broader understanding of the results.</li></ul></li><li>Once we have the data, we can run simple analyses like regression to map the incidence of control / test to the collected data. Since biometric & well-being data is bounded and inherently thin-tailed, we can assume
+<a href=https://www.mathsisfun.com/data/standard-normal-distribution.html target=_self rel="noreferrer noopener">Gaussian distribution</a> and find correlations.</li></ul><p>Now that we&rsquo;ve got a basic <em>pseudo-scientific</em> framework for a self-experimentation protocol, how would we apply this to the aforementioned dinner of delicious algae?</p><ol><li>Creating a placebo algae will be tough. One option would be to use a kind of algae with no proven health benefits as the control group and a mishmash of &ldquo;healthy&rdquo; micro-algae as the test group.</li><li>The health benefits of algae take roughly ~1 week to kick in, so we can collect data from the ~1 week after this initial loading phase.</li><li>Thus, I&rsquo;ll need to create a set of test & control algae baggies with 14 globs in each. At the beginning of a 2-week window, I will randomly pick a baggie and take the algae daily until I run out, while collecting data for the latter 7 days.</li><li>During this data collection period, I&rsquo;ll measure a broad swath of health factors like sleep through Oura, general aerobic and athletic performance through my Apple Watch, level of focus during the day through Rize, and subjective levels of well-being and energy.</li><li>Finally, I&rsquo;ll run a few regressions to see if there was any statistically significant increase in my measured health factors by eating algae.
+Doesn&rsquo;t that sound fun? I think so. 🦠</li></ol></article><footer class=post_footer><hr><div class=footer_cta><div class=footer_blurb><p>Thanks for reading! If you enjoy my site, you can subscribe via
 <a class=yellow_link href=/index.xml>RSS</a>, peep me on
 <a href=https://twitter.com/nikhilthota target=_blank>Twitter</a>,
 check out my other <a class=yellow_link href=/>writing</a>, or
-follow my <a href=https://thot.substack.com/embed target=_blank>newsletter</a>.</p>
-</div>
-<iframe src=https://thot.substack.com/embed width=350 height=300 style=border-radius:40px frameborder=0 scrolling=no></iframe>
-</div>
-<hr>
-<div class=adjacent_posts>
-<div class=prev>
-<a class="image_link prev_link" href=https://nikhilthota.com/notes/water-1/>
-<i class="uil uil-enter"></i>
-<h3>Aquatic Confessions</h3>
-</a>
-</div>
-<div class=next>
-<a class="image_link next_link" href=https://nikhilthota.com/notes/zen-software-engineering/>
-<h3>Zen and The Art of Software Engineering </h3>
-<i class="uil uil-corner-down-right-alt"></i>
-</a>
-</div>
-</div>
-<figure class=banner_footer>
-<img src=/images/footer_banner.png></img>
-</figure>
-<div id=snackbar>
-<script src=/js/permalink.js></script>
-<script src=/js/post_footer.js></script>
-</footer>
-</div>
-</body>
-</html>
+follow my <a href=https://thot.substack.com/embed target=_blank>newsletter</a>.</p></div><iframe src=https://thot.substack.com/embed width=350 height=300 style=border-radius:40px frameborder=0 scrolling=no></iframe></div><hr><div class=adjacent_posts><div class=prev><a class="image_link prev_link" href=https://nikhilthota.com/notes/water-1/><i class='uil uil-enter'></i><h3>Aquatic Confessions</h3></a></div><div class=next><a class="image_link next_link" href=https://nikhilthota.com/notes/zen-software-engineering/><h3>Zen and The Art of Software Engineering</h3><i class='uil uil-corner-down-right-alt'></i></a></div></div><figure class=banner_footer><img src=/images/footer_banner.png></img></figure><div id=snackbar><script src=/js/permalink.js></script>
+<script src=/js/post_footer.js></script></footer></div></body></html>
